@@ -10,13 +10,13 @@ interface ProductType {
 const products: ProductType[] = [
     {
         id: 1,
-        section: "Company",
-        link: ['About us', 'Blog', 'Contact us', 'Pricing', 'Testimonials'],
+        section: "Empresa",
+        link: ['Sobre nós', 'Blog', 'Fale Conosco', 'Shop'],
     },
     {
         id: 2,
-        section: "Support",
-        link: ['Help center', 'Terms of service', 'Legal', 'Privacy Policy', 'Status']
+        section: "Suporte",
+        link: ['Whatsapp', 'E-mail', 'Política de Privacidade']
     }
 ]
 
@@ -29,8 +29,8 @@ const footer = () => {
                     {/* COLUMN-1 */}
 
                     <div className='col-span-4'>
-                        <img src={'/assets/logo/Logo2.svg'} alt="logo" className='pb-4' />
-                        <h3 className='text-white text-lg font-medium leading-9 mb-4 lg:mb-20'> Level up your skills, and get dream <br /> job with passion. </h3>
+                        <img src={'/assets/logo/Logo3.svg'} alt="logo" className='pb-4' />
+                        <h3 className='text-white text-lg font-medium leading-9 mb-4 lg:mb-20'> Seu caminho para o <br /> Sucesso. </h3>
                         <div className='flex gap-4'>
                             <Link href="/"><img src={'/assets/footer/insta.svg'} alt="instagram" className='footer-icons' /></Link>
                             <Link href="/"><img src={'/assets/footer/dribble.svg'} alt="dribble" className='footer-icons' /></Link>
@@ -57,12 +57,12 @@ const footer = () => {
                     {/* CLOUMN-4 */}
 
                     <div className='col-span-4'>
-                        <h3 className='text-white text-xl font-semibold mb-6'>Stay up to date</h3>
+                        <h3 className='text-white text-xl font-semibold mb-6'>Mantenha-se Atualizado</h3>
                         <div className="relative text-white focus-within:text-white flex flex-row-reverse">
                             <input type="Email address" name="q" className="py-4 text-sm w-full text-white bg-gray-900 rounded-md pl-4 focus:outline-none bg-emailbg focus:text-white" placeholder="Your email address" autoComplete="off" />
                             <div className="absolute inset-y-0 right-0 flex items-center pr-2">
                                 <button type="submit" className="p-1 focus:outline-none focus:shadow-outline">
-                                    <img src={'/assets/footer/inputIcon.svg'} alt="inputicon" />
+                                    <img src={'/assets/footer/inputIcon.svg'} alt="i    nputicon" />
                                 </button>
                             </div>
                         </div>
@@ -74,7 +74,7 @@ const footer = () => {
             {/* All Rights Reserved */}
 
             <div className='pb-24 px-4'>
-                <h3 className='text-center text-offwhite'>@2023 - All Rights Reserved by <Link href="https://adminmart.com/" target="_blank"> Adminmart.com</Link></h3>
+                <h3 className='text-center text-offwhite'>@2024 - Todos os direitos Reservados à <Link href="https://ead.profissionalizaead.com.br/" target="_blank"> Profissionaliza EAD</Link></h3>
             </div>
 
         </div>

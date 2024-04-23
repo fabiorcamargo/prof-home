@@ -16,11 +16,11 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-    { name: 'Home', href: '/', current: true },
-    { name: 'Courses', href: '#courses-section', current: false },
-    { name: 'Mentors', href: '#mentors-section', current: false },
-    { name: 'Testimonial', href: '#testimonial-section', current: false },
-    { name: 'Join', href: '#join-section', current: false },
+    { name: 'Início', href: '/', current: true },
+    { name: 'Cursos', href: '#courses-section', current: false },
+    { name: 'Mentores', href: '#mentors-section', current: false },
+    { name: 'Avaliações', href: '#testimonial-section', current: false },
+    { name: 'Inscrever-se', href: '#join-section', current: false },
 ]
 
 function classNames(...classes: string[]) {
@@ -32,7 +32,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = React.useState(false);
 
     return (
-        <Disclosure as="nav" className="bg-yellow navbar">
+        <Disclosure as="nav" className="bg-white navbar">
             <>
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="relative flex h-16 items-center justify-between">
@@ -56,7 +56,7 @@ const Navbar = () => {
 
                             {/* LINKS */}
 
-                            <div className="hidden sm:ml-14 md:block">
+                            <div className="hidden sm:ml-14 md:block pt-4">
                                 <div className="flex space-x-4">
                                     {navigation.map((item) => (
                                         <Link

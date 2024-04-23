@@ -7,37 +7,42 @@ import Companies from '../../components/Companies/Companies';
 const Banner = () => {
     return (
         <main className='banner-image'>
-    <div className="bg-yellow text-white pb-20 pt-4">
-        <div className="container mx-auto flex flex-col md:flex-row items-center my-4 md:my-24">
-            <div className="flex flex-col w-full lg:w-1/3 justify-center items-start p-8">
-                <h1 className="animate-fade animate-delay-[400ms] text-3xl md:text-5xl text-black tracking-loose">Sua Educação Em Primeiro Lugar</h1>
-                {/* <h2 className="animate-fade animate-delay-200 text-1xl font-bold md:text-3xl leading-relaxed text-black md:leading-snug my-2">Sua Educação Em Primeiro Lugar
+            <div className="bg-yellow text-white pb-20 pt-4">
+                <div className="container mx-auto flex flex-col md:flex-row items-center my-4 md:my-24">
+                    <div className="flex flex-col w-full lg:w-1/3 justify-center items-start p-8">
+                        <h1 className="animate-fade animate-delay-[400ms] text-3xl md:text-5xl text-black tracking-loose">Sua Educação Em Primeiro Lugar</h1>
+                        {/* <h2 className="animate-fade animate-delay-200 text-1xl font-bold md:text-3xl leading-relaxed text-black md:leading-snug my-2">Sua Educação Em Primeiro Lugar
                 </h2> */}
-                <p className="text-sm md:text-base animate-fade animate-delay-[500ms] my-2 text-black mb-4">Estamos a mais de 10 anos no mercado, oferencendo conteúdo de qualidade e tecnologia de ponta</p>
-                <div className="flex flex-col justify-center md:justify-start">
-                    <a href="#"
-                        className="bg-transparent animate-fade-right animate-delay-[600ms] hover:bg-yellow-300 my-1   text-black hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent mb-2 md:mb-0">
-                        Alunos até 2022</a>
-                    <a href="#"
-                        className="bg-transparent animate-fade-right animate-delay-[700ms] hover:bg-yellow-300 my-1  text-black hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent mb-2 md:mb-0">
-                        Alunos 2023/2024</a>
-                    <a href="#"
-                        className="bg-transparent animate-fade-right animate-delay-[800ms] hover:bg-yellow-300 my-1   text-black hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent mb-2 md:mb-0">
-                        Alunos Inglês</a>
+                        <p className="text-sm md:text-base animate-fade animate-delay-[500ms] my-2 text-black mb-4">Estamos a mais de 10 anos no mercado, oferecendo conteúdo de qualidade e tecnologia de ponta.</p>
+                        <div className="flex flex-col justify-center md:justify-start">
+                            <a href="https://ead.profissionalizaead.com.br/login/index.php"
+                                className="bg-transparent animate-fade-right animate-delay-[600ms] hover:bg-yellow-300 my-1   text-black hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent mb-2 md:mb-0">
+                                Alunos até 2022</a>
+                            <a href="https://alunos.profissionalizaead.com.br/login"
+                                className="bg-transparent animate-fade-right animate-delay-[700ms] hover:bg-yellow-300 my-1  text-black hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent mb-2 md:mb-0">
+                                Alunos 2023/2024</a>
+                            <a href="https://ead.profissionalizaead.com.br/login/index.php"
+                                className="bg-transparent animate-fade-right animate-delay-[800ms] hover:bg-yellow-300 my-1 text-black hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent mb-2 md:mb-0 flex items-center"
+                            >
+                                Alunos Inglês
+                                <img src="/gb_flag.svg" className='w-6 h-6 ml-2' alt="" />
+                            </a>
+
+
+                        </div>
+                    </div>
+                    <div className="p-8 mb-6 md:mb-0 md:mt-0 ml-0 md:ml-12 lg:w-2/3  justify-center">
+                        <div className="h-48 flex flex-wrap content-center">
+                            <div>
+                                <img className=" animate-fade-right animate-delay-[900ms] mt-28 hidden xl:block" src="/assets/banner/2b.png" /></div>
+                            <div>
+                                <img className="inline-block animate-fade-right animate-delay-[1000ms] mt-24 md:mt-0 p-8 md:p-0" src="/assets/banner/1.png" /></div>
+                            <div>
+                                <img className="  animate-fade-right animate-delay-[1100ms] mt-28 hidden lg:block" src="/assets/banner/3b.png" /></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div className="p-8 mb-6 md:mb-0 md:mt-0 ml-0 md:ml-12 lg:w-2/3  justify-center">
-                <div className="h-48 flex flex-wrap content-center">
-                    <div>
-                        <img className=" animate-fade-right animate-delay-[900ms] mt-28 hidden xl:block" src="https://user-images.githubusercontent.com/54521023/116969935-c13d5b00-acd4-11eb-82b1-5ad2ff10fb76.png"/></div>
-                    <div>
-                        <img className="inline-block animate-fade-right animate-delay-[1000ms] mt-24 md:mt-0 p-8 md:p-0" src="https://user-images.githubusercontent.com/54521023/116969931-bedb0100-acd4-11eb-99a9-ff5e0ee9f31f.png"/></div>
-                    <div>
-                        <img className="  animate-fade-right animate-delay-[1100ms] mt-28 hidden lg:block" src="https://user-images.githubusercontent.com/54521023/116969939-c1d5f180-acd4-11eb-8ad4-9ab9143bdb50.png"/></div>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
 

@@ -14,11 +14,16 @@ html {
   scroll-behavior: smooth!important;
   }
 
+  
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body.scroll-top {
+  overflow-y: hidden;
 }
 
 html:not([data-scroll="0"]) .navbar {

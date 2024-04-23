@@ -12,7 +12,7 @@ export default function Home() {
       <Banner />
       <Tabs />
       <Mentor />
-      <Students />
+      {/* <Students /> */}
       <Newsletter />
     </main>
   )

@@ -40,8 +40,8 @@ const Contactusform = () => {
 
     return (
         <>
-            <div className=" inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto md:ml-6 sm:pr-0">
-            <div className='md:hidden'>
+            {/* <div className=" inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto md:ml-6 sm:pr-0">
+                <div className='md:hidden'>
                     <button type="button" className='text-15px font-medium' onClick={openModal}>
                         Contact Us
                     </button>
@@ -51,7 +51,7 @@ const Contactusform = () => {
                         Contact Us
                     </button>
                 </div>
-            </div>
+            </div> */}
 
             <Transition appear show={isOpen} as={Fragment}>
                 <Dialog as="div" className="relative z-50" onClose={closeModal}>

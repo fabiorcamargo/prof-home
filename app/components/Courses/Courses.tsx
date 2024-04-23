@@ -9,147 +9,148 @@ interface Name {
     imageSrc: string;
     profession: string;
     price: string;
-    category: 'mobiledevelopment' | 'webdevelopment' | 'datascience' | 'cloudcomputing';
+    category: 'preparatorios';
+    // category: 'mobiledevelopment' | 'preparatorios' | 'datascience' | 'cloudcomputing';
     turma: string;
 }
 
 const names: Name[] = [
     {
-        course: 'HTML, CSS, JS',
-        imageSrc: '/assets/courses/coursesOne.svg',
-        profession: 'HTML, CSS, Javascript Development',
+        course: 'Administrativo, Contábil, Informatizado',
+        imageSrc: '/assets/courses/AG.jpg',
+        profession: 'Aprendiz Bancário',
         price: '40',
-        category: 'webdevelopment',
+        category: 'preparatorios',
         turma: '5'
     },
     {
-        course: 'Node.js',
-        imageSrc: '/assets/courses/coursesTwo.svg',
-        profession: 'Backend with Node.js and Express.js',
+        course: 'Português, Matemática, História, ...',
+        imageSrc: '/assets/courses/PRE.jpg',
+        profession: 'Pré Militar',
         price: '21',
-        category: 'webdevelopment',
+        category: 'preparatorios',
         turma: '6'
     },
-    {
-        course: 'Database',
-        imageSrc: '/assets/courses/coursesThree.svg',
-        profession: 'Learn Mongodb with Mongoose',
-        price: '21',
-        category: 'webdevelopment',
-        turma: '7'
-    },
-    {
-        course: 'React.js',
-        imageSrc: '/assets/courses/coursesFour.svg',
-        profession: 'Learn React with Redux toolkit',
-        price: '99',
-        category: 'webdevelopment',
-        turma: '4'
-    },
-    {
-        course: 'React Native',
-        imageSrc: '/assets/courses/coursesOne.svg',
-        profession: 'Learn React Native with Node.js',
-        price: '89',
-        category: 'mobiledevelopment',
-        turma: '4'
-    },
-    {
-        course: 'Swift',
-        imageSrc: '/assets/courses/coursesThree.svg',
-        profession: 'Learn Swift from Scratch',
-        price: '89',
-        category: 'mobiledevelopment',
-        turma: '4'
-    },
-    {
-        course: 'Flutter',
-        imageSrc: '/assets/courses/coursesFour.svg',
-        profession: 'Flutter App Development',
-        price: '69',
-        category: 'mobiledevelopment',
-        turma: '4'
-    },
-    {
-        course: 'Onsen UI',
-        imageSrc: '/assets/courses/coursesTwo.svg',
-        profession: 'Learn Onsen Ui with HTML, CSS',
-        price: '69',
-        category: 'mobiledevelopment',
-        turma: '4'
-    },
-    {
-        course: 'TensorFlow',
-        imageSrc: '/assets/courses/coursesTwo.svg',
-        profession: 'Learn TensorFlow with SQL',
-        price: '99',
-        category: 'datascience',
-        turma: '4'
-    },
-    {
-        course: 'AWS',
-        imageSrc: '/assets/courses/coursesFour.svg',
-        profession: 'AWS Deep Learning AMI',
-        price: '99',
-        category: 'datascience',
-        turma: '4'
-    },
-    {
-        course: 'Bokeh',
-        imageSrc: '/assets/courses/coursesOne.svg',
-        profession: 'Learn Bokeh with Python',
-        price: '99',
-        category: 'datascience',
-        turma: '4'
-    },
-    {
-        course: 'Scikit',
-        imageSrc: '/assets/courses/coursesThree.svg',
-        profession: 'Scikit with Python Development',
-        price: '89',
-        category: 'datascience',
-        turma: '4'
-    },
-    {
-        course: 'Laas',
-        imageSrc: '/assets/courses/coursesThree.svg',
-        profession: 'Infra-as-a-Service',
-        price: '21',
-        category: 'cloudcomputing',
-        turma: '4'
-    },
-    {
-        course: 'Iaas',
-        imageSrc: '/assets/courses/coursesFour.svg',
-        profession: 'Info-as-a-Service',
-        price: '29',
-        category: 'cloudcomputing',
-        turma: '4'
-    },
-    {
-        course: 'Paas',
-        imageSrc: '/assets/courses/coursesOne.svg',
-        profession: 'Platform-as-a-Service',
-        price: '99',
-        category: 'cloudcomputing',
-        turma: '4'
-    },
-    {
-        course: 'Saas',
-        imageSrc: '/assets/courses/coursesTwo.svg',
-        profession: 'Software-as-a-Service',
-        price: '58',
-        category: 'cloudcomputing',
-        turma: '4'
-    }
+    // {
+    //     course: 'Database',
+    //     imageSrc: '/assets/courses/coursesThree.svg',
+    //     profession: 'Learn Mongodb with Mongoose',
+    //     price: '21',
+    //     category: 'preparatorios',
+    //     turma: '7'
+    // },
+    // {
+    //     course: 'React.js',
+    //     imageSrc: '/assets/courses/coursesFour.svg',
+    //     profession: 'Learn React with Redux toolkit',
+    //     price: '99',
+    //     category: 'preparatorios',
+    //     turma: '4'
+    // },
+    // {
+    //     course: 'React Native',
+    //     imageSrc: '/assets/courses/coursesOne.svg',
+    //     profession: 'Learn React Native with Node.js',
+    //     price: '89',
+    //     category: 'mobiledevelopment',
+    //     turma: '4'
+    // },
+    // {
+    //     course: 'Swift',
+    //     imageSrc: '/assets/courses/coursesThree.svg',
+    //     profession: 'Learn Swift from Scratch',
+    //     price: '89',
+    //     category: 'mobiledevelopment',
+    //     turma: '4'
+    // },
+    // {
+    //     course: 'Flutter',
+    //     imageSrc: '/assets/courses/coursesFour.svg',
+    //     profession: 'Flutter App Development',
+    //     price: '69',
+    //     category: 'mobiledevelopment',
+    //     turma: '4'
+    // },
+    // {
+    //     course: 'Onsen UI',
+    //     imageSrc: '/assets/courses/coursesTwo.svg',
+    //     profession: 'Learn Onsen Ui with HTML, CSS',
+    //     price: '69',
+    //     category: 'mobiledevelopment',
+    //     turma: '4'
+    // },
+    // {
+    //     course: 'TensorFlow',
+    //     imageSrc: '/assets/courses/coursesTwo.svg',
+    //     profession: 'Learn TensorFlow with SQL',
+    //     price: '99',
+    //     category: 'datascience',
+    //     turma: '4'
+    // },
+    // {
+    //     course: 'AWS',
+    //     imageSrc: '/assets/courses/coursesFour.svg',
+    //     profession: 'AWS Deep Learning AMI',
+    //     price: '99',
+    //     category: 'datascience',
+    //     turma: '4'
+    // },
+    // {
+    //     course: 'Bokeh',
+    //     imageSrc: '/assets/courses/coursesOne.svg',
+    //     profession: 'Learn Bokeh with Python',
+    //     price: '99',
+    //     category: 'datascience',
+    //     turma: '4'
+    // },
+    // {
+    //     course: 'Scikit',
+    //     imageSrc: '/assets/courses/coursesThree.svg',
+    //     profession: 'Scikit with Python Development',
+    //     price: '89',
+    //     category: 'datascience',
+    //     turma: '4'
+    // },
+    // {
+    //     course: 'Laas',
+    //     imageSrc: '/assets/courses/coursesThree.svg',
+    //     profession: 'Infra-as-a-Service',
+    //     price: '21',
+    //     category: 'cloudcomputing',
+    //     turma: '4'
+    // },
+    // {
+    //     course: 'Iaas',
+    //     imageSrc: '/assets/courses/coursesFour.svg',
+    //     profession: 'Info-as-a-Service',
+    //     price: '29',
+    //     category: 'cloudcomputing',
+    //     turma: '4'
+    // },
+    // {
+    //     course: 'Paas',
+    //     imageSrc: '/assets/courses/coursesOne.svg',
+    //     profession: 'Platform-as-a-Service',
+    //     price: '99',
+    //     category: 'cloudcomputing',
+    //     turma: '4'
+    // },
+    // {
+    //     course: 'Saas',
+    //     imageSrc: '/assets/courses/coursesTwo.svg',
+    //     profession: 'Software-as-a-Service',
+    //     price: '58',
+    //     category: 'cloudcomputing',
+    //     turma: '4'
+    // }
 ];
 
 const NamesList = () => {
 
-    const [selectedButton, setSelectedButton] = useState<'mobiledevelopment' | 'webdevelopment' | 'datascience' | 'cloudcomputing' | 'all' | null>('webdevelopment');
+    const [selectedButton, setSelectedButton] = useState<'mobiledevelopment' | 'preparatorios' | 'datascience' | 'cloudcomputing' | 'all' | null>('preparatorios');
 
     const mobileDevelopment = names.filter((name) => name.category === 'mobiledevelopment');
-    const webDevelopment = names.filter((name) => name.category === 'webdevelopment');
+    const preparatorios = names.filter((name) => name.category === 'preparatorios');
     const dataScience = names.filter((name) => name.category === 'datascience');
     const cloudComputing = names.filter((name) => name.category === 'cloudcomputing');
 
@@ -157,8 +158,8 @@ const NamesList = () => {
 
     if (selectedButton === 'mobiledevelopment') {
         selectedNames = mobileDevelopment;
-    } else if (selectedButton === 'webdevelopment') {
-        selectedNames = webDevelopment;
+    } else if (selectedButton === 'preparatorios') {
+        selectedNames = preparatorios;
     } else if (selectedButton === 'datascience') {
         selectedNames = dataScience;
     } else if (selectedButton === 'cloudcomputing') {
@@ -181,9 +182,9 @@ const NamesList = () => {
                     <div className="mt-6 block font-normal text-gray-900">
                         {name.course}
                     </div>
-                    <div className="mt-6 block text-lg font-semibold text-green border-solid border-2 border-green rounded-md px-1">
+                    {/* <div className="mt-6 block text-lg font-semibold text-green border-solid border-2 border-green rounded-md px-1">
                         ${name.price}
-                    </div>
+                    </div> */}
                 </div>
                 <p aria-hidden="true" className="mt-2 mb-5 text-2xl font-semibold ">
                     {name.profession}
@@ -224,13 +225,13 @@ const NamesList = () => {
                 <div className='flex nowhitespace space-x-5 rounded-xl bg-white p-1 overflow-x-auto'>
 
                     {/* FOR DESKTOP VIEW */}
-                    <button onClick={() => setSelectedButton('webdevelopment')} className={"bg-white " + (selectedButton === 'webdevelopment' ? 'text-black border-b-2 border-orange' : 'text-lightgrey') + " pb-2 text-lg hidden sm:block"}>Web Development</button>
+                    <button onClick={() => setSelectedButton('preparatorios')} className={"bg-white " + (selectedButton === 'preparatorios' ? 'text-black border-b-2 border-orange' : 'text-lightgrey') + " pb-2 text-lg hidden sm:block"}>Preaparatórios</button>
                     <button onClick={() => setSelectedButton('mobiledevelopment')} className={"bg-white " + (selectedButton === 'mobiledevelopment' ? 'text-black border-b-2 border-orange' : 'text-lightgrey') + " pb-2 text-lg hidden sm:block"}>Mobile Development</button>
                     <button onClick={() => setSelectedButton('datascience')} className={"bg-white " + (selectedButton === 'datascience' ? 'text-black border-b-2 border-orange' : 'text-lightgrey') + " pb-2 text-lg hidden sm:block"}>Data Science</button>
                     <button onClick={() => setSelectedButton('cloudcomputing')} className={"bg-white " + (selectedButton === 'cloudcomputing' ? 'text-black border-b-2 border-orange' : 'text-lightgrey') + " pb-2 text-lg hidden sm:block"}>Cloud Computing</button>
 
                     {/* FOR MOBILE VIEW */}
-                    <GlobeAltIcon onClick={() => setSelectedButton('webdevelopment')} width={70} height={70} className={"bg-white " + (selectedButton === 'webdevelopment' ? 'border-b-2 border-orange fill-orange' : '') + " pb-2 block sm:hidden"} />
+                    <GlobeAltIcon onClick={() => setSelectedButton('preparatorios')} width={70} height={70} className={"bg-white " + (selectedButton === 'preparatorios' ? 'border-b-2 border-orange fill-orange' : '') + " pb-2 block sm:hidden"} />
                     <DevicePhoneMobileIcon onClick={() => setSelectedButton('mobiledevelopment')} width={70} height={70} className={"bg-white " + (selectedButton === 'mobiledevelopment' ? 'border-b-2 border-orange fill-orange' : '') + " pb-2 block sm:hidden"} />
                     <CircleStackIcon onClick={() => setSelectedButton('datascience')} width={70} height={70} className={"bg-white " + (selectedButton === 'datascience' ? 'border-b-2 border-orange fill-orange' : '') + " pb-2 block sm:hidden"} />
                     <CloudIcon onClick={() => setSelectedButton('cloudcomputing')} width={70} height={70} className={"bg-white " + (selectedButton === 'cloudcomputing' ? 'border-b-2 border-orange fill-orange' : '') + " pb-2 block sm:hidden"} />

@@ -26,7 +26,8 @@ module.exports = {
       'offwhite': ' #FDFDFD',
       'offblack' :'#333333',
       'red' : '#FF605C',
-      'yellow' : '#FDC500'
+      'yellow' : '#FDC500',
+      'blue' : '#425cf4'
     },
     fontFamily: {
       'inter': ['Inter', "sans-serif"]
