@@ -74,6 +74,13 @@ const footer = () => {
             {/* All Rights Reserved */}
 
             <div className='pb-24 px-4'>
+                <h3 className="text-center text-offwhite">
+                Avenida Advogado Horácio Raccanello Filho<br />5410 Salas 01 e 02 - Zona 7, Novo Centro, 87020-035
+                Maringá - PR | Brasil CEP: 87020-035 <br />
+                CNPJ: 42.866.959/0001-54
+                CNPJ: 41.769.690/0001-25
+                </h3>
+                <br />
                 <h3 className='text-center text-offwhite'>@2024 - Todos os direitos Reservados à <Link href="https://ead.profissionalizaead.com.br/" target="_blank"> Profissionaliza EAD</Link></h3>
             </div>
 

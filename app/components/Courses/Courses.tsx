@@ -9,6 +9,7 @@ interface Name {
     imageSrc: string;
     profession: string;
     price: string;
+    students: string;
     category: 'preparatorios';
     // category: 'mobiledevelopment' | 'preparatorios' | 'datascience' | 'cloudcomputing';
     turma: string;
@@ -20,16 +21,18 @@ const names: Name[] = [
         imageSrc: '/assets/courses/AG.jpg',
         profession: 'Aprendiz Bancário',
         price: '40',
+        students: '3521',
         category: 'preparatorios',
-        turma: '5'
+        turma: '9'
     },
     {
         course: 'Português, Matemática, História, ...',
         imageSrc: '/assets/courses/PRE.jpg',
         profession: 'Pré Militar',
         price: '21',
+        students: '1085',
         category: 'preparatorios',
-        turma: '6'
+        turma: '4'
     },
     // {
     //     course: 'Database',
@@ -195,11 +198,11 @@ const NamesList = () => {
                     <div className='flex flex-row space-x-4'>
                         <div className='flex'>
                             <img src={'/assets/courses/account.svg'} alt="circle" />
-                            <p className='text-lightgrey ml-1'>120</p>
+                            <p className='text-lightgrey ml-1'>{name.students}</p>
                         </div>
                         <div className='flex'>
                             <img src={'/assets/courses/Star.svg'} alt="star" />
-                            <p className='ml-1'>4.5</p>
+                            <p className='ml-1'>4.8</p>
                         </div>
                     </div>
                 </div>
@@ -226,9 +229,9 @@ const NamesList = () => {
 
                     {/* FOR DESKTOP VIEW */}
                     <button onClick={() => setSelectedButton('preparatorios')} className={"bg-white " + (selectedButton === 'preparatorios' ? 'text-black border-b-2 border-orange' : 'text-lightgrey') + " pb-2 text-lg hidden sm:block"}>Preaparatórios</button>
-                    <button onClick={() => setSelectedButton('mobiledevelopment')} className={"bg-white " + (selectedButton === 'mobiledevelopment' ? 'text-black border-b-2 border-orange' : 'text-lightgrey') + " pb-2 text-lg hidden sm:block"}>Mobile Development</button>
+                    {/* <button onClick={() => setSelectedButton('mobiledevelopment')} className={"bg-white " + (selectedButton === 'mobiledevelopment' ? 'text-black border-b-2 border-orange' : 'text-lightgrey') + " pb-2 text-lg hidden sm:block"}>Mobile Development</button>
                     <button onClick={() => setSelectedButton('datascience')} className={"bg-white " + (selectedButton === 'datascience' ? 'text-black border-b-2 border-orange' : 'text-lightgrey') + " pb-2 text-lg hidden sm:block"}>Data Science</button>
-                    <button onClick={() => setSelectedButton('cloudcomputing')} className={"bg-white " + (selectedButton === 'cloudcomputing' ? 'text-black border-b-2 border-orange' : 'text-lightgrey') + " pb-2 text-lg hidden sm:block"}>Cloud Computing</button>
+                    <button onClick={() => setSelectedButton('cloudcomputing')} className={"bg-white " + (selectedButton === 'cloudcomputing' ? 'text-black border-b-2 border-orange' : 'text-lightgrey') + " pb-2 text-lg hidden sm:block"}>Cloud Computing</button> */}
 
                     {/* FOR MOBILE VIEW */}
                     <GlobeAltIcon onClick={() => setSelectedButton('preparatorios')} width={70} height={70} className={"bg-white " + (selectedButton === 'preparatorios' ? 'border-b-2 border-orange fill-orange' : '') + " pb-2 block sm:hidden"} />
