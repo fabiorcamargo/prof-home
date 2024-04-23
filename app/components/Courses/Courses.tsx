@@ -149,21 +149,21 @@ const NamesList = () => {
 
     const [selectedButton, setSelectedButton] = useState<'mobiledevelopment' | 'preparatorios' | 'datascience' | 'cloudcomputing' | 'all' | null>('preparatorios');
 
-    const mobileDevelopment = names.filter((name) => name.category === 'mobiledevelopment');
+    // const mobileDevelopment = names.filter((name) => name.category === 'mobiledevelopment');
     const preparatorios = names.filter((name) => name.category === 'preparatorios');
-    const dataScience = names.filter((name) => name.category === 'datascience');
-    const cloudComputing = names.filter((name) => name.category === 'cloudcomputing');
+    // const dataScience = names.filter((name) => name.category === 'datascience');
+    // const cloudComputing = names.filter((name) => name.category === 'cloudcomputing');
 
     let selectedNames: Name[] = [];
 
     if (selectedButton === 'mobiledevelopment') {
-        selectedNames = mobileDevelopment;
+        // selectedNames = mobileDevelopment;
     } else if (selectedButton === 'preparatorios') {
         selectedNames = preparatorios;
     } else if (selectedButton === 'datascience') {
-        selectedNames = dataScience;
+        // selectedNames = dataScience;
     } else if (selectedButton === 'cloudcomputing') {
-        selectedNames = cloudComputing
+        // selectedNames = cloudComputing
     }
 
 
