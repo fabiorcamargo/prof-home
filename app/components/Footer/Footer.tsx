@@ -4,19 +4,28 @@ import Link from "next/link";
 interface ProductType {
     id: number;
     section: string;
-    link: string[];
+    link: (string | { text: string, url: string })[];
 }
 
 const products: ProductType[] = [
     {
         id: 1,
         section: "Empresa",
-        link: ['Sobre nós', 'Blog', 'Fale Conosco', 'Shop'],
+        link: [
+            'Sobre nós',
+            'Blog',
+            'Fale Conosco',
+
+        ],
     },
     {
         id: 2,
         section: "Suporte",
-        link: ['Whatsapp', 'E-mail', 'Política de Privacidade']
+        link: [
+            { text: 'WhatsApp', url: 'https://wa.me/5544984233200' },
+            'E-mail',
+            'Política de Privacidade'
+        ]
     }
 ]
 
@@ -45,9 +54,13 @@ const footer = () => {
                         <div key={product.id} className="group relative col-span-2">
                             <p className="text-white text-xl font-semibold mb-9">{product.section}</p>
                             <ul>
-                                {product.link.map((link: string, index: number) => (
+                                {product.link.map((link, index) => (
                                     <li key={index} className='mb-5'>
-                                        <Link href="/" className="text-offwhite text-sm font-normal mb-6 space-links">{link}</Link>
+                                        {typeof link === 'string' ? (
+                                            <Link href="/" className="text-offwhite text-sm font-normal mb-6 space-links">{link}</Link>
+                                        ) : (
+                                            <a href={link.url} className="text-offwhite text-sm font-normal mb-6 space-links">{link.text}</a>
+                                        )}
                                     </li>
                                 ))}
                             </ul>
@@ -75,14 +88,21 @@ const footer = () => {
 
             <div className='pb-24 px-4'>
                 <h3 className="text-center text-offwhite">
-                Avenida Advogado Horácio Raccanello Filho<br />5410 Salas 01 e 02 - Zona 7, Novo Centro, 87020-035
-                Maringá - PR | Brasil CEP: 87020-035 <br />
-                CNPJ: 42.866.959/0001-54
-                CNPJ: 41.769.690/0001-25
+                    Avenida Advogado Horácio Raccanello Filho<br />5410 Salas 01 e 02 - Zona 7, Novo Centro, 87020-035
+                    Maringá - PR | Brasil CEP: 87020-035 <br />
+                    CNPJ: 42.866.959/0001-54
+                    CNPJ: 41.769.690/0001-25
                 </h3>
                 <br />
                 <h3 className='text-center text-offwhite'>@2024 - Todos os direitos Reservados à <Link href="https://ead.profissionalizaead.com.br/" target="_blank"> Profissionaliza EAD</Link></h3>
             </div>
+       
+            <div className="fixed bottom-4 right-4 z-10">
+                <a href="https://wa.me/5544984233200" target="_blank" rel="noopener noreferrer">
+                    <img src="WhatsApp.svg" alt="WhatsApp" className=" w-20 h-20 rounded-full  p-2" />
+                </a>
+            </div>
+
 
         </div>
     )
