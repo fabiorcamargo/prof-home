@@ -36,8 +36,18 @@ const App = () => {
 
     const fetchData = async () => {
         try {
-            const response = await fetch('https://alunos.profissionalizaead.com.br/api/groups');
-            const jsonData = await response.json();
+            //const response = await fetch('https://alunos.profissionalizaead.com.br/api/groups');
+            const jsonData = [
+                {
+                    "id": 1,
+                    "name": "Teste",
+                    "description": "Esse é um grupo teste",
+                    "link": "https://profissionalizaead.com.br",
+                    "expire": "2024-05-16",
+                    "created_at": null,
+                    "updated_at": null
+                }
+            ];
             setData(jsonData);
 
             // Preencher names com os dados da requisição
