@@ -41,16 +41,20 @@ const Navbar = () => {
                             {/* LOGO */}
 
                             <div className="flex flex-shrink-0 items-center">
+                                <a href="/">
                                 <img
                                     className="block h-30px w-30px lg:hidden"
                                     src={'/assets/logo/Logo.svg'}
                                     alt="Courses-Logo"
                                 />
+                                </a>
+                                <a href="/">
                                 <img
                                     className="hidden h-48px w-48px lg:block"
                                     src={'/assets/logo/Logo.svg'}
                                     alt="Courses-Logo"
                                 />
+                                </a>
                                 {/* <h2 className='text-white ps-4 text-lg'>Profissionaliza EAD</h2> */}
                             </div>
 
