@@ -1,4 +1,5 @@
 // app/contact/page.tsx
+"use client"
 import React from 'react';
 import Mentor from '../components/Mentor/Mentor';
 import Newsletter from '../components/Newsletter/Newsletter';
