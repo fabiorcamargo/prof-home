@@ -65,26 +65,28 @@ const App = () => {
     });
 
     const nameElements = filteredNames.map((name) => (
-        <div key={name.id} className="text-lg sm:text-sm py-5 lg:py-5">
-            
-            <div className="aspect-w-1 aspect-h-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75 relative">
+        <div key={name.id} className="bg-white shadow-lg rounded-lg overflow-hidden my-4">
+            <div className="relative group">
                 <img
                     src={name.imageSrc}
-                    alt={name.imageSrc}
-                    className="h-full w-full object-cover object-center"
+                    alt={name.card}
+                    className="w-full h-48 object-cover object-center"
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-50"></div> {/* Overlay preto */}
-                <QRCode value={name.link} style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }} />
+                <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <QRCode value={name.link} size={128} />
+                </div>
             </div>
-            <div aria-hidden="true" className="mt-4 text-2xl font-semibold ">
-                {name.card}
+            <div className="p-4">
+                <h3 className="text-xl font-semibold text-gray-800">{name.card}</h3>
+                <p className="text-gray-600">{name.description}</p>
+                <a
+                    href={name.link}
+                    target="_blank"
+                    className="mt-4 inline-block bg-green400 hover:bg-green-600 text-white font-medium py-2 px-4 rounded"
+                >
+                    Entrar no Grupo
+                </a>
             </div>
-            <div className="block font-normal text-gray-900">
-                {name.description}
-            </div>
-            <a href={name.link} className="flex w-full bg-green hover:bg-green400 text-white font-medium hover:text-white py-3 px-4 rounded">
-                Entrar no Grupo
-            </a>
         </div>
     ));
 
@@ -94,7 +96,7 @@ const App = () => {
                 <div className='sm:flex justify-between items-center pb-2'>
                     <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-gray-900 my-4">Grupos do Whatsapp</h2>
                 </div>
-                <p className="text-md sm:text-md tracking-tight text-gray-900">Entre no Grupo do Whatsapp do seu Curso, receba todos os informativos e os lembretes das aulas.</p>
+                <p className="text-md sm:text-md tracking-tight text-gray-900 pb-4">Entre no Grupo do Whatsapp do seu Curso, receba todos os informativos e os lembretes das aulas.</p>
                 <div>
                     <div className="mx-auto max-w-7xl">
                         <div className="grid grid-cols-1 gap-y-10 gap-x-8 pb-12">
