@@ -36,18 +36,9 @@ const App = () => {
 
     const fetchData = async () => {
         try {
-            //const response = await fetch('https://alunos.profissionalizaead.com.br/api/groups');
-            const jsonData = [
-                {
-                    "id": 1,
-                    "name": "Teste",
-                    "description": "Esse é um grupo teste",
-                    "link": "https://profissionalizaead.com.br",
-                    "expire": "2024-05-16",
-                    "created_at": null,
-                    "updated_at": null
-                }
-            ];
+            const response = await fetch('https://alunos.profissionalizaead.com.br/api/groups');
+            const jsonData = await response.json();
+
             setData(jsonData);
 
             // Preencher names com os dados da requisição
@@ -75,12 +66,7 @@ const App = () => {
 
     const nameElements = filteredNames.map((name) => (
         <div key={name.id} className="text-lg sm:text-sm py-5 lg:py-5">
-            <div aria-hidden="true" className="mt-4 text-2xl font-semibold ">
-                {name.card}
-            </div>
-            <div className="block font-normal text-gray-900">
-                {name.description}
-            </div>
+            
             <div className="aspect-w-1 aspect-h-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75 relative">
                 <img
                     src={name.imageSrc}
@@ -89,6 +75,12 @@ const App = () => {
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50"></div> {/* Overlay preto */}
                 <QRCode value={name.link} style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }} />
+            </div>
+            <div aria-hidden="true" className="mt-4 text-2xl font-semibold ">
+                {name.card}
+            </div>
+            <div className="block font-normal text-gray-900">
+                {name.description}
             </div>
             <a href={name.link} className="flex w-full bg-green hover:bg-green400 text-white font-medium hover:text-white py-3 px-4 rounded">
                 Entrar no Grupo
