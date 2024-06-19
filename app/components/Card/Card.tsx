@@ -45,7 +45,7 @@ const App = () => {
             const namesData: Name[] = jsonData.map((group: Group) => ({
                 id: group.id,
                 card: group.name,
-                imageSrc: '/assets/courses/AG.jpg', // Defina a imagem padrão ou obtenha a imagem real da API
+                imageSrc: '/assets/courses/GrupoAlunos.jpg', // Defina a imagem padrão ou obtenha a imagem real da API
                 description: group.description,
                 link: group.link,
                 price: '', // Se necessário

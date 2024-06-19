@@ -1,18 +1,11 @@
 // app/contact/page.tsx
-"use client"
+"use client";
 
-import React, { useEffect } from 'react';
+import React from 'react';
 import Head from 'next/head'; // Importando a tag Head do Next.js
-import Mentor from '../components/Mentor/Mentor';
-import Newsletter from '../components/Newsletter/Newsletter';
 import Card from '../components/Card/Card'; // Importando o componente Card
 
 const Grupos: React.FC = () => {
-  useEffect(() => {
-    // Redireciona para uma URL externa
-    window.location.href = 'https://wa.me/5544984233200?text=Preciso%20de%20ajuda';
-  }, []);
-
   return (
     <>
       <Head>
@@ -34,7 +27,7 @@ const Grupos: React.FC = () => {
         <meta name="twitter:url" content="https://profissionalizaead.com.br/whatsapp" />
       </Head>
       <main>
-        <div>Redirecionando...</div>
+        <Card />
       </main>
     </>
   );
