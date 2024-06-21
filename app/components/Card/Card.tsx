@@ -30,14 +30,43 @@ const App = () => {
     const [names, setNames] = useState<Name[]>([]);
     const [selectedButton, setSelectedButton] = useState<'mobiledevelopment' | 'preparatorios' | 'datascience' | 'cloudcomputing' | 'all' | null>('preparatorios');
 
+    // Define o tipo para wp_group_category
+    interface WpGroupCategory {
+        id: number;
+        name: string;
+        img: string;
+        created_at: string;
+        updated_at: string;
+    }
+
+    // Define o tipo para Group
+    interface Group {
+        id: number;
+        cademi_code: string;
+        name: string;
+        description: string;
+        link: string;
+        inicio: string;
+        fim: string;
+        created_at: string;
+        updated_at: string;
+        wp_group_category_id: number;
+        wp_group_category: WpGroupCategory; // Adiciona a propriedade wp_group_category
+    }
+
+    // Defina a URL base da sua aplicação
+    const baseUrl = 'https://alunos.profissionalizaead.com.br';
+
     useEffect(() => {
         fetchData();
     }, []);
 
     const fetchData = async () => {
         try {
-            const response = await fetch('https://alunos.profissionalizaead.com.br/api/groups');
+            const response = await fetch(`${baseUrl}/api/groups`);
             const jsonData = await response.json();
+
+            console.log(jsonData);
 
             setData(jsonData);
 
@@ -45,7 +74,7 @@ const App = () => {
             const namesData: Name[] = jsonData.map((group: Group) => ({
                 id: group.id,
                 card: group.name,
-                imageSrc: '/assets/courses/GrupoAlunos.jpg', // Defina a imagem padrão ou obtenha a imagem real da API
+                imageSrc: `${baseUrl}${group.wp_group_category.img}`, // Defina a imagem padrão ou obtenha a imagem real da API
                 description: group.description,
                 link: group.link,
                 price: '', // Se necessário
