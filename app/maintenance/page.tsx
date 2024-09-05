@@ -14,7 +14,7 @@ const Links: React.FC = () => {
         autoplay: true,
         loop: true,
         canvas: canvas, // Passa o canvas
-        src: "/Animation - 1725558907902.json", // Substitua pelo caminho correto da sua animação
+        src: "/maintenance.json", // Substitua pelo caminho correto da sua animação
       });
 
       return () => {
