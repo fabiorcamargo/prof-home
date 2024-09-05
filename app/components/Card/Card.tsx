@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { GlobeAltIcon, DevicePhoneMobileIcon, CircleStackIcon, CloudIcon } from '@heroicons/react/24/outline';
 import QRCode from 'qrcode.react';
+import Image from 'next/image';
 
 interface Group {
     id: number;
@@ -96,10 +97,12 @@ const App = () => {
     const nameElements = filteredNames.map((name) => (
         <div key={name.id} className="bg-white shadow-lg rounded-lg overflow-hidden my-4">
             <div className="relative group">
-                <img
+                <Image
                     src={name.imageSrc}
                     alt={name.card}
                     className="w-full h-48 object-cover object-center"
+                    width={800}
+                    height={500}
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                     <QRCode value={name.link} size={128} />
