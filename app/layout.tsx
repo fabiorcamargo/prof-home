@@ -1,10 +1,10 @@
-import Head from 'next/head';
 import './globals.css';
 import Script from 'next/script';
 
 export const metadata = {
   title: 'Profissionaliza EAD',
   description: 'Cursos para o seu futuro',
+  themeColor: '#FFFF00'
 }
 
 export default function RootLayout({
@@ -15,16 +15,13 @@ export default function RootLayout({
   return (
 
     <html lang="pt-BR">
-      <Head>
-        <meta name="theme-color" content="#FFFF00" />
-      </Head>
       <body>
         {children}
         <Script
-          id="mautic-tracking"
-          strategy="beforeInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
+        id="mautic-tracking"
+        strategy="beforeInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
             (function(w,d,t,u,n,a,m){
               w['MauticTrackingObject']=n;
               w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},
@@ -37,8 +34,8 @@ export default function RootLayout({
 
             mt('send', 'pageview');
           `,
-          }}
-        />
+        }}
+      />
       </body>
     </html>
 
