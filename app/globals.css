@@ -39,6 +39,10 @@ html:not([data-scroll="0"]) .navbar {
   z-index: 3;
 }
 
+.pt-safe {
+  padding-top: env(safe-area-inset-top);
+}
+
 .banner-image {
   background-image: url('/assets/banner/background.png');
   background-repeat: no-repeat;

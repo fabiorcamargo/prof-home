@@ -15,7 +15,7 @@ const Links: React.FC = () => {
   ];
 
   return (
-    <div className="flex flex-col min-h-screen bg-yellow">
+    <div className="flex flex-col min-h-screen bg-yellow pt-safe">
       <main className="flex-grow mt-4 mx-auto mb-5 max-w-sm flex-col rounded-3xl border-4 border-t-8 border-gray-900 bg-white px-4 py-6 text-black shadow-2xl">
         <div className="grid place-items-center">
           <Image
