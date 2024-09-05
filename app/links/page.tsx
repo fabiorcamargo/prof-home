@@ -2,8 +2,7 @@
 "use client";
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
-import { motion } from 'framer-motion'; // Importando a biblioteca
+import { motion } from 'framer-motion';
 
 const Links: React.FC = () => {
 
@@ -16,8 +15,8 @@ const Links: React.FC = () => {
   ];
 
   return (
-    <main>
-      <div className="mt-4 mx-auto mb-5 max-w-sm flex-col rounded-3xl border-4 border-t-8 border-gray-900 bg-white px-4 py-6 text-black shadow-2xl">
+    <div className="flex flex-col min-h-screen">
+      <main className="flex-grow mt-4 mx-auto mb-5 max-w-sm flex-col rounded-3xl border-4 border-t-8 border-gray-900 bg-white px-4 py-6 text-black shadow-2xl">
         <div className="grid place-items-center">
           <Image
             className="rounded-full animate-jump-in"
@@ -31,7 +30,7 @@ const Links: React.FC = () => {
         </div>
         <div className="my-3 grid grid-cols-5 items-center gap-4 px-4">
           {links.map((link, index) => (
-            <Link href={link.url} key={index} passHref>
+             <a href={link.url} key={index} target="_blank" rel="noopener noreferrer">
               <motion.button
                 className="h-12 w-12 transform rounded-full bg-transparent text-2xl duration-500 hover:-translate-y-3 hover:bg-black hover:text-white"
                 initial={{ opacity: 0, y: 20 }}
@@ -46,11 +45,11 @@ const Links: React.FC = () => {
                   height={48}
                 />
               </motion.button>
-            </Link>
+            </a>
           ))}
         </div>
         {['https://home.profissionalizaead.com.br'].map((link, index) => (
-          <Link href={link} key={index}>
+          <a href={link} key={index} target="_blank" rel="noopener noreferrer">
           <motion.div
             className="my-2 flex h-16 items-center justify-between rounded-lg border-2 border-b-4 border-l-4 border-black px-4 shadow-xl"
             initial={{ opacity: 0, scale: 0.9 }}
@@ -73,24 +72,13 @@ const Links: React.FC = () => {
               </div>
             </div>
           </motion.div>
-        </Link>
+        </a>
         ))}
-        <div className="text-center font-extrabold text-black">&copy; Profissionaliza EAD</div>
-        <script
-          data-name="BMC-Widget"
-          data-cfasync="false"
-          src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
-          data-id="sahilnetic"
-          data-description="Support me on Buy me a coffee!"
-          data-message=""
-          data-color="#FFDD00"
-          data-position="Right"
-          data-x_margin="18"
-          data-y_margin="18"
-          async
-        ></script>
-      </div>
-    </main>
+      </main>
+      <footer className="text-center font-extrabold text-black pb-4">
+        Profissionaliza EAD &copy;
+      </footer>
+    </div>
   );
 };
 
