@@ -19,7 +19,7 @@ export const metadata = {
     // Certifique-se de que o caminho para a imagem está correto e acessível
     images: [
       {
-        url: '/Logo.png', // Se estiver no diretório público
+        url: 'https://home.profissionalizaead.com.br/Logo.png', // Se estiver no diretório público
         width: 1200,
         height: 630,
         alt: 'Logo Profissionaliza EAD',
