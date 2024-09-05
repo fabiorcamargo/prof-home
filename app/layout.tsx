@@ -9,10 +9,6 @@ export const metadata = {
   // Colocando o themeColor dentro do campo correto
   themeColor: '#fdc500',
 
-  facebook: {
-    appId: '3834776773426810',
-  },
-
   openGraph: {
     title: 'Profissionaliza EAD',
     description: 'Cursos para o seu futuro',
@@ -31,6 +27,14 @@ export const metadata = {
   },
 
   canonical: 'https://profissionalizaead.com.br',
+
+  // Meta tag específica para integração com o Facebook
+  additionalMetaTags: [
+    {
+      name: 'fb:app_id',
+      content: '3834776773426810',  // ID do seu app do Facebook
+    }
+  ],
 }
 
 export default function RootLayout({
