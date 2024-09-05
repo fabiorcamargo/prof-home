@@ -4,7 +4,7 @@ import Script from 'next/script';
 export const metadata = {
   title: 'Profissionaliza EAD',
   description: 'Cursos para o seu futuro',
-  themeColor: '#FFFF00'
+  themeColor: '#fdc500'
 }
 
 export default function RootLayout({
