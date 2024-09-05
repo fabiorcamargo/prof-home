@@ -47,8 +47,8 @@ const Links: React.FC = () => {
           </a>
         </div>
 
-        <div className="grid place-items-center pt-16">
-          <h4>Quer ser avisado quando estivermos disponíveis? Deixe seu email.</h4>
+        <div className="grid place-items-center pt-8">
+          <h4 className='text-center'>Quer ser avisado quando estivermos disponíveis? Deixe seu email.</h4>
 
           {/* Corrigido o iframe */}
           <iframe
