@@ -9,6 +9,10 @@ export const metadata = {
   // Colocando o themeColor dentro do campo correto
   themeColor: '#fdc500',
 
+  facebook: {
+    appId: '3834776773426810',
+  },
+
   openGraph: {
     title: 'Profissionaliza EAD',
     description: 'Cursos para o seu futuro',
@@ -23,7 +27,10 @@ export const metadata = {
     ],
     type: 'website',
     locale: 'pt_BR',
+    url: 'https://profissionalizaead.com.br',
   },
+
+  canonical: 'https://profissionalizaead.com.br',
 }
 
 export default function RootLayout({
