@@ -4,15 +4,25 @@ import Script from 'next/script';
 export const metadata = {
   title: 'Profissionaliza EAD',
   description: 'Cursos para o seu futuro',
-  themeColor: '#fdc500',
   keywords: ['Profissionaliza', 'Profissionaliza EAD', 'Educação', 'Cursos', 'Preparatórios'],
+
+  // Colocando o themeColor dentro do campo correto
+  themeColor: '#fdc500',
 
   openGraph: {
     title: 'Profissionaliza EAD',
     description: 'Cursos para o seu futuro',
-    images: '/Logo-image.png',
+    // Certifique-se de que o caminho para a imagem está correto e acessível
+    images: [
+      {
+        url: '/Logo.png', // Se estiver no diretório público
+        width: 1200,
+        height: 630,
+        alt: 'Logo Profissionaliza EAD',
+      }
+    ],
     type: 'website',
-    locale: 'pt_BR'
+    locale: 'pt_BR',
   },
 }
 
