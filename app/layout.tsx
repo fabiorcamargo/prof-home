@@ -4,7 +4,16 @@ import Script from 'next/script';
 export const metadata = {
   title: 'Profissionaliza EAD',
   description: 'Cursos para o seu futuro',
-  themeColor: '#fdc500'
+  themeColor: '#fdc500',
+  keywords: ['Profissionaliza', 'Profissionaliza EAD', 'Educação', 'Cursos', 'Preparatórios'],
+
+  openGraph: {
+    title: 'Profissionaliza EAD',
+    description: 'Cursos para o seu futuro',
+    images: '/Logo-image.png',
+    type: 'website',
+    locale: 'pt_BR'
+  },
 }
 
 export default function RootLayout({
