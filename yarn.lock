@@ -127,6 +127,11 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
+"@lottiefiles/dotlottie-web@^0.32.0":
+  version "0.32.0"
+  resolved "https://registry.npmjs.org/@lottiefiles/dotlottie-web/-/dotlottie-web-0.32.0.tgz"
+  integrity sha512-uzVg66pQWVf3vUF8r0O14FBMH3RvrxltLtdngNqpD3komjsC22zDsIPug/C+GuudD5tGhj3SFrPqelV1fW6kJQ==
+
 "@next/env@13.4.2":
   version "13.4.2"
   resolved "https://registry.npmjs.org/@next/env/-/env-13.4.2.tgz"
