@@ -47,6 +47,7 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body>
         {children}
+        <Script src="//mautic.profissionalizaead.com.br/focus/2.js" type="text/javascript"></Script>
         <Script
         id="mautic-tracking"
         strategy="beforeInteractive"
