@@ -65,20 +65,19 @@ const Mentor = () => {
         <div id="mentors-section" className="mx-auto max-w-2xl pb-16 px-4 sm:py-20 sm:px-6 lg:max-w-7xl lg:px-8">
 
             <div className='sm:flex justify-between items-center mb-12'>
-                <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-gray-900 my-4">Conheça seus Professores</h2>
+                <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-gray-900 my-4">Conheça um pouco da Nossa História</h2>
                 <div>
-                    <button className="bg-transparent hover:bg-purple text-purple font-medium hover:text-white py-3 px-4 border border-lightgrey hover:border-transparent rounded">
-                        Veja todos
-                    </button>
+                    <a href="https://sobre.profissionalizaead.com.br/" className="bg-transparent hover:bg-purple text-purple font-medium hover:text-white py-3 px-4 border border-lightgrey hover:border-transparent rounded">
+                        Sobre nós
+                    </a>
                 </div>
             </div>
 
-            <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
+            <div className="mt-6 grid grid-cols-1 gap-y-10">
 
                 <div>
-                    <div style={{ color: '#333', padding: '20px'}}>
-                        <h1>Estamos em Construção</h1>
-                        <p>Estamos trabalhando para trazer mais conteúdo em breve.</p>
+                    <div style={{ color: '#333'}}>
+                        <h1 className="text-xl sm:text-xl font-bold">O que começou como um sonho de promover um futuro melhor, hoje podemos dizer que investimos no futuro de mais de 40.000 alunos</h1>
                     </div>
 
                   

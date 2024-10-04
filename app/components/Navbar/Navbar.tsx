@@ -17,6 +17,7 @@ interface NavigationItem {
 
 const navigation: NavigationItem[] = [
     { name: 'Início', href: '/', current: true },
+    { name: 'Sobre Nós', href: 'https://sobre.profissionalizaead.com.br/', current: true },
     { name: 'Cursos', href: '#courses-section', current: false },
     { name: 'Mentores', href: '#mentors-section', current: false },
     { name: 'Avaliações', href: '#testimonial-section', current: false },
