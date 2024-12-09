@@ -15,6 +15,7 @@ module.exports = {
       'white': '#ffffff',
       'black': '#000000',
       "purple": '#611F69',
+      'purple-claro' :  '#a004ff',
       'lightgrey': '#8C8C8C',
       'green': '#6B9F36',
       'green400': '#90c457',
@@ -28,7 +29,8 @@ module.exports = {
       'offblack' :'#333333',
       'red' : '#FF605C',
       'yellow' : '#FDC500',
-      'blue' : '#425cf4'
+      'blue' : '#425cf4',
+      'y-contrast' : '#392008' 
     },
     fontFamily: {
       'inter': ['Inter', "sans-serif"]

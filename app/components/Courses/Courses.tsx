@@ -18,7 +18,7 @@ interface Name {
 const names: Name[] = [
     {
         course: 'Administrativo, Contábil, Informatizado',
-        imageSrc: '/assets/courses/AG.jpg',
+        imageSrc: '/assets/courses/2.webp',
         profession: 'Aprendiz Bancário',
         price: '40',
         students: '3521',
@@ -27,21 +27,49 @@ const names: Name[] = [
     },
     {
         course: 'Português, Matemática, História, ...',
-        imageSrc: '/assets/courses/PRE.jpg',
+        imageSrc: '/assets/courses/1.webp',
         profession: 'Pré Militar',
         price: '21',
         students: '1085',
         category: 'preparatorios',
         turma: '4'
     },
-    // {
-    //     course: 'Database',
-    //     imageSrc: '/assets/courses/coursesThree.svg',
-    //     profession: 'Learn Mongodb with Mongoose',
-    //     price: '21',
-    //     category: 'preparatorios',
-    //     turma: '7'
-    // },
+    {
+        course: 'Plantio, Colheita, Logística, Administração ...',
+        imageSrc: '/assets/courses/3.webp',
+        profession: 'Aprendiz do Agro',
+        price: '21',
+        category: 'preparatorios',
+        turma: '7',
+        students: ""
+    },
+    {
+        course: 'Setores de Atuação, Comissários de Bordo, Manutenção, ...',
+        imageSrc: '/assets/courses/4.webp',
+        profession: 'Jovem na Aviação',
+        price: '21',
+        category: 'preparatorios',
+        turma: '1',
+        students: ""
+    },
+    {
+        course: 'Atuação, Contratos e Documentos, Leis, ...',
+        imageSrc: '/assets/courses/5.webp',
+        profession: 'Jovem no Direito',
+        price: '21',
+        category: 'preparatorios',
+        turma: '1',
+        students: ""
+    },
+    {
+        course: 'Cuidador, Primeiros Socorros, Recreação, ...',
+        imageSrc: '/assets/courses/6.webp',
+        profession: 'Auxiliar de Creche',
+        price: '21',
+        category: 'preparatorios',
+        turma: '1',
+        students: ""
+    }
     // {
     //     course: 'React.js',
     //     imageSrc: '/assets/courses/coursesFour.svg',
@@ -220,7 +248,7 @@ const NamesList = () => {
                     <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-gray-900 my-4">Mais Buscados</h2>
                     <div>
                         <button className="bg-transparent hover:bg-purple text-purple font-medium hover:text-white py-3 px-4 border border-purple hover:border-transparent rounded">
-                            Explore Classes
+                            Turmas Ativas
                         </button>
                     </div>
                 </div>

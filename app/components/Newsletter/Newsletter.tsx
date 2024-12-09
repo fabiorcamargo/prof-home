@@ -29,15 +29,15 @@ const Newsletter = () => {
     }, []);
 
     return (
-        <div className="mt-32 ">
+        <div className="mt-32">
             <div id="join-section" className='-mt-32 relative z-10'>
-                <div className="mx-auto max-w-2xl py-16 md:py-24 px-4 sm:px-6 md:max-w-7xl lg:px-24 bg-orange rounded-lg bg-newsletter">
+                <div className="mx-auto max-w-2xl py-16 md:py-24 px-4 sm:px-6 md:max-w-7xl lg:px-24 bg-yellow rounded-lg bg-newsletter">
                     <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 xl:gap-x-8">
 
                         {/* COLUMN-1 */}
                         <div>
-                            <h3 className="text-5xl font-bold mb-3"> Receba nossas atualizações </h3>
-                            <h4 className="text-lg font-medium mb-7">Deixe seu email para receber conteúdos sobre o mercado de trabalho e promoções.</h4>
+                            <h3 className="text-5xl font-bold mb-3 text-y-contrast"> Receba nossas atualizações </h3>
+                            <h4 className="text-lg font-medium mb-7 text-y-contrast">Deixe seu email para receber conteúdos sobre o mercado de trabalho e promoções.</h4>
                             <form role="form" method="post" action="https://mautic.profissionalizaead.com.br/form/submit?formId=1" id="mauticform_newsletter" data-mautic-form="newsletter">
                                 <div className="mauticform-error" id="mauticform_newsletter_error"></div>
                                 <div className='bg-green text-white pl-2 mb-2'>

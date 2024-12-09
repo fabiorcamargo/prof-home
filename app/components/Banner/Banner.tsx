@@ -1,6 +1,4 @@
 "use client"
-import Dropdownone from './Dropdownone';
-import Dropdowntwo from './Dropdowntwo';
 import Companies from '../../components/Companies/Companies';
 
 
@@ -10,25 +8,17 @@ const Banner = () => {
             <div className="bg-yellow text-white pb-20 pt-4">
                 <div className="container mx-auto flex flex-col md:flex-row items-center my-4 md:my-24">
                     <div className="flex flex-col w-full lg:w-1/3 justify-center items-start p-8">
-                        <h1 className="animate-fade animate-delay-[400ms] text-3xl md:text-5xl text-black tracking-loose">Sua Educação Em Primeiro Lugar</h1>
+                        <h1 className="animate-fade animate-delay-[400ms] text-3xl font-semibold md:text-5xl text-offblack tracking-loose">Sua Educação Em Primeiro Lugar</h1>
                         {/* <h2 className="animate-fade animate-delay-200 text-1xl font-bold md:text-3xl leading-relaxed text-black md:leading-snug my-2">Sua Educação Em Primeiro Lugar
                 </h2> */}
-                        <p className="text-sm md:text-base animate-fade animate-delay-[500ms] my-2 text-black mb-4">Estamos a mais de 10 anos no mercado, oferecendo conteúdo de qualidade e tecnologia de ponta.</p>
+                        <p className="text-base md:text-base animate-fade animate-delay-[500ms] my-2 text-offblack mb-4">Estamos a mais de 10 anos no mercado, oferecendo conteúdo de qualidade e tecnologia de ponta.</p>
                         <div className="flex flex-col justify-center md:justify-start">
                             <a href="https://ead.profissionalizaead.com.br/login/index.php"
-                                className="bg-transparent animate-fade-right animate-delay-[600ms] hover:bg-yellow-300 my-1   text-black hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent mb-2 md:mb-0">
+                                className="bg-lightgrey animate-fade-right animate-delay-[600ms] hover:bg-yellow-300 my-1 space-links  text-white font-semibold hover:text-black rounded-bl-lg rounded-tr-lg shadow hover:shadow-lg py-2 px-4  hover:border-transparent mb-2 md:mb-0">
                                 Alunos até 2022</a>
                             <a href="https://alunos.profissionalizaead.com.br/login"
-                                className="bg-transparent animate-fade-right animate-delay-[700ms] hover:bg-yellow-300 my-1  text-black hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent mb-2 md:mb-0">
+                                className="bg-purple-claro animate-fade-right animate-delay-[700ms] hover:bg-yellow-300 my-1 space-links  text-white font-semibold hover:text-black rounded-bl-lg shadow hover:shadow-lg rounded-tr-lg py-2 px-4  hover:border-transparent mb-2 md:mb-0">
                                 Alunos 2023/2024</a>
-                            <a href="https://ead.profissionalizaead.com.br/login/index.php"
-                                className="bg-transparent animate-fade-right animate-delay-[800ms] hover:bg-yellow-300 my-1 text-black hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent mb-2 md:mb-0 flex items-center"
-                            >
-                                Alunos Inglês
-                                <img src="/gb_flag.svg" className='w-6 h-6 ml-2' alt="" />
-                            </a>
-
-
                         </div>
                     </div>
                     <div className="p-8 mb-6 md:mb-0 md:mt-0 ml-0 md:ml-12 lg:w-2/3  justify-center">

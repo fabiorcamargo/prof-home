@@ -1,92 +1,38 @@
 import Link from "next/link";
+import Image from "next/image";
 
-// MIDDLE LINKS DATA
-interface ProductType {
-    id: number;
-    section: string;
-    link: (string | { text: string, url: string })[];
-}
-
-const products: ProductType[] = [
-    {
-        id: 1,
-        section: "Empresa",
-        link: [
-            'Sobre nós',
-            'Blog',
-            'Fale Conosco',
-
-        ],
-    },
-    {
-        id: 2,
-        section: "Suporte",
-        link: [
-            { text: 'WhatsApp', url: 'https://wa.me/5544984233200' },
-            'E-mail',
-            'Política de Privacidade'
-        ]
-    }
-]
 
 const footer = () => {
     return (
-        <div className="bg-bgpurple -mt-64" id="first-section">
-            <div className="mx-auto max-w-2xl pt-64 pb-16 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-                <div className="mt-24 grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-12 xl:gap-x-8">
+        <div className="bg-blue -mt-64" id="first-section">
 
-                    {/* COLUMN-1 */}
-
-                    <div className='col-span-4'>
-                        <img src={'/assets/logo/Logo3.svg'} alt="logo" className='pb-4' />
-                        <h3 className='text-white text-lg font-medium leading-9 mb-4 lg:mb-20'> Seu caminho para o <br /> Sucesso. </h3>
-                        <div className='flex gap-4'>
-                            <Link href="/"><img src={'/assets/footer/insta.svg'} alt="instagram" className='footer-icons' /></Link>
-                            <Link href="/"><img src={'/assets/footer/dribble.svg'} alt="dribble" className='footer-icons' /></Link>
-                            <Link href="/"><img src={'/assets/footer/twitter.svg'} alt="twitter" className='footer-icons' /></Link>
-                            <Link href="/"><img src={'/assets/footer/youtube.svg'} alt="youtube" className='footer-icons' /></Link>
-                        </div>
-                    </div>
-
-                    {/* CLOUMN-2/3 */}
-
-                    {products.map((product) => (
-                        <div key={product.id} className="group relative col-span-2">
-                            <p className="text-white text-xl font-semibold mb-9">{product.section}</p>
-                            <ul>
-                                {product.link.map((link, index) => (
-                                    <li key={index} className='mb-5'>
-                                        {typeof link === 'string' ? (
-                                            <Link href="/" className="text-offwhite text-sm font-normal mb-6 space-links">{link}</Link>
-                                        ) : (
-                                            <a href={link.url} className="text-offwhite text-sm font-normal mb-6 space-links">{link.text}</a>
-                                        )}
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    ))}
-
-                    {/* CLOUMN-4 */}
-
-                    <div className='col-span-4'>
-                        <h3 className='text-white text-xl font-semibold mb-6'>Mantenha-se Atualizado</h3>
-                        <div className="relative text-white focus-within:text-white flex flex-row-reverse">
-                            <input type="Email address" name="q" className="py-4 text-sm w-full text-white bg-gray-900 rounded-md pl-4 focus:outline-none bg-emailbg focus:text-white" placeholder="Your email address" autoComplete="off" />
-                            <div className="absolute inset-y-0 right-0 flex items-center pr-2">
-                                <button type="submit" className="p-1 focus:outline-none focus:shadow-outline">
-                                    <img src={'/assets/footer/inputIcon.svg'} alt="i    nputicon" />
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
 
             {/* All Rights Reserved */}
 
-            <div className='pb-24 px-4'>
+            <div className='w-full flex flex-col items-center'>
+                <div className='flex gap-2 justify-center'>
+                    <Link href="https://www.instagram.com/profissionalizaead">
+                        <img src='/assets/footer/instagram.svg' alt="instagram" className='footer-icons' />
+                    </Link>
+                    <Link href="https://www.facebook.com/profissionalizaead">
+                        <img src='/assets/footer/facebook.svg' alt="facebook" className='footer-icons' />
+                    </Link>
+                    <Link href="https://www.youtube.com/@profissionalizaead">
+                        <img src='/assets/footer/youtube.svg' alt="youtube" className='footer-icons' />
+                    </Link>
+                    <Link href="https://wa.me/5544984233200">
+                        <img src='/assets/footer/whatsapp.svg' alt="whatsapp" className='footer-icons' />
+                    </Link>
+                </div>
+
+                <div className="w-full flex flex-col items-center pt-8">
+                    <img src='/assets/logo/Logo-White.svg' alt="logo" className='mb-4' />
+                    <h3 className='text-white text-lg font-medium'>
+                        Seu caminho para o Sucesso.
+                    </h3>
+                </div>
+            </div>
+            <div className='pb-24 px-4 pt-10'>
                 <h3 className="text-center text-offwhite">
                     Avenida Advogado Horácio Raccanello Filho<br />5410 Salas 01 e 02 - Zona 7, Novo Centro, 87020-035
                     Maringá - PR | Brasil CEP: 87020-035 <br />
@@ -96,10 +42,17 @@ const footer = () => {
                 <br />
                 <h3 className='text-center text-offwhite'>@2024 - Todos os direitos Reservados à <Link href="https://ead.profissionalizaead.com.br/" target="_blank"> Profissionaliza EAD</Link></h3>
             </div>
-       
+
             <div className="fixed bottom-4 right-4 z-10">
                 <a href="https://wa.me/5544984233200" target="_blank" rel="noopener noreferrer">
-                    <img src="WhatsApp.svg" alt="WhatsApp" className=" w-20 h-20 rounded-full  p-2" />
+                    
+                    <Image
+                        className="w-20 h-20 rounded-full p-2 footer-icons"
+                        alt="whatsapp"
+                        src="WhatsApp.svg"
+                        width={100}
+                        height={100}
+                    />
                 </a>
             </div>
 
