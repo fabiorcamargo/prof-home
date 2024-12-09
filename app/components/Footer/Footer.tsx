@@ -4,7 +4,8 @@ import Image from "next/image";
 
 const footer = () => {
     return (
-        <div className="bg-blue -mt-64 mt-0 pt-4 sm:mt-0" id="first-section">
+        <div className="mt-10">
+        <div className="bg-blue pt-10" id="first-section">
 
 
             {/* All Rights Reserved */}
@@ -57,6 +58,7 @@ const footer = () => {
             </div>
 
 
+        </div>
         </div>
     )
 }
