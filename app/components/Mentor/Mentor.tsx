@@ -71,7 +71,7 @@ const Mentor = () => {
                     <div className="max-w-md aspect-w-1 aspect-h-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
                         <img
                             src='assets/mentor/Sobre.webp'
-                            alt=''
+                            alt='sobre'
                             className="h-full w-full object-cover object-center"
                         />
                     </div>
