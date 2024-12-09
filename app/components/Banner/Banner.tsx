@@ -24,11 +24,11 @@ const Banner = () => {
                     <div className="p-8 mb-6 md:mb-0 md:mt-0 ml-0 md:ml-12 lg:w-2/3  justify-center">
                         <div className="h-48 flex flex-wrap content-center">
                             <div>
-                                <img className=" animate-fade-right animate-delay-[900ms] mt-28 hidden xl:block" src="/assets/banner/2b.png" /></div>
+                                <img className=" animate-fade-right animate-delay-[900ms] mt-28 hidden xl:block" alt='banner-1' src="/assets/banner/2b.png" /></div>
                             <div>
-                                <img className="inline-block animate-fade-right animate-delay-[1000ms] mt-24 md:mt-0 p-8 md:p-0" src="/assets/banner/1.png" /></div>
+                                <img className="inline-block animate-fade-right animate-delay-[1000ms] mt-24 md:mt-0 p-8 md:p-0" alt='banner-2' src="/assets/banner/1.png" /></div>
                             <div>
-                                <img className="  animate-fade-right animate-delay-[1100ms] mt-28 hidden lg:block" src="/assets/banner/3b.png" /></div>
+                                <img className="  animate-fade-right animate-delay-[1100ms] mt-28 hidden lg:block" alt='banner-3' src="/assets/banner/3b.png" /></div>
                         </div>
                     </div>
                 </div>

@@ -26,7 +26,7 @@ export const metadata = {
     url: 'https://profissionalizaead.com.br',
   },
 
-  canonical: 'https://profissionalizaead.com.br',
+  canonical: 'https://home.profissionalizaead.com.br',
 
   // Meta tag específica para integração com o Facebook
   additionalMetaTags: [
