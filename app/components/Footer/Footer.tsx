@@ -41,7 +41,7 @@ const footer = () => {
                     CNPJ: 41.769.690/0001-25
                 </h3>
                 <br />
-                <h3 className='text-center text-offwhite'>@2024 - Todos os direitos Reservados à <Link href="https://ead.profissionalizaead.com.br/" target="_blank"> Profissionaliza EAD</Link></h3>
+                <h3 className='text-center text-offwhite'>@2024 - Todos os direitos Reservados à <Link href="https://profissionalizaead.com.br/" target="_blank"> Profissionaliza EAD</Link></h3>
             </div>
 
             <div className="fixed bottom-4 right-4 z-10">
