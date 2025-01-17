@@ -18,7 +18,7 @@ const Banner = () => {
                                 Alunos até 2022</a>
                             <a href="https://alunos.profissionalizaead.com.br/login"
                                 className="bg-purple-claro animate-fade-right animate-delay-[700ms] hover:bg-yellow-300 my-1 space-links  text-white font-semibold hover:text-black rounded-bl-lg shadow hover:shadow-lg rounded-tr-lg py-2 px-4  hover:border-transparent mb-2 md:mb-0">
-                                Alunos 2023/2024</a>
+                                Área do Aluno <p className=' font-normal text-xs'>(Novos Alunos)</p> </a>
                         </div>
                     </div>
                     <div className="p-8 mb-6 md:mb-0 md:mt-0 ml-0 md:ml-12 lg:w-2/3  justify-center">
