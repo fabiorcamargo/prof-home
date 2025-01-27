@@ -91,7 +91,7 @@ const Footer = () => {
                 </a>
                 <button
                   onClick={closeModal}
-                  className="bg-offblack hover:bg-blue-700 text-white font-medium py-2 px-4 rounded"
+                  className="bg-lightgrey hover:bg-blue-700 text-white font-medium py-2 px-4 rounded"
                 >
                   Fechar
                 </button>
