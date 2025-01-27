@@ -45,7 +45,7 @@ const footer = () => {
             </div>
 
             <div className="fixed bottom-4 right-4 z-10">
-                <a href="https://wa.me/5544984233200" target="_blank" rel="noopener noreferrer">
+                <a href="https://nwdsk.co/c17SA" target="_blank" rel="noopener noreferrer">
                     
                     <Image
                         className="w-20 h-20 rounded-full p-2 footer-icons"
@@ -60,6 +60,7 @@ const footer = () => {
 
         </div>
         </div>
+        
     )
 }
 
