@@ -85,13 +85,13 @@ const Footer = () => {
                   href="https://nwdsk.co/c17SA"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-purple-claro animate-fade-right animate-delay-[700ms] hover:bg-yellow-300 my-1 space-links  text-white font-semibold hover:text-black rounded-bl-lg shadow hover:shadow-lg rounded-tr-lg py-2 px-4  hover:border-transparent mb-2 md:mb-0"
+                  className="bg-green hover:bg-blue-700 text-white font-medium py-2 px-4 rounded"
                 >
                   Entrar em Contato
                 </a>
                 <button
                   onClick={closeModal}
-                  className="bg-purple-claro animate-fade-right animate-delay-[700ms] hover:bg-yellow-300 my-1 space-links  text-white font-semibold hover:text-black rounded-bl-lg shadow hover:shadow-lg rounded-tr-lg py-2 px-4  hover:border-transparent mb-2 md:mb-0"
+                  className="bg-offblack hover:bg-blue-700 text-white font-medium py-2 px-4 rounded"
                 >
                   Fechar
                 </button>
