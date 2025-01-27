@@ -82,7 +82,7 @@ const Footer = () => {
               </p>
               <div className="flex justify-end gap-2">
                 <a
-                  href="https://profissionalizaead.com.br/contato"
+                  href="https://nwdsk.co/c17SA"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-green hover:bg-blue-700 text-white font-medium py-2 px-4 rounded"
