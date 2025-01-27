@@ -74,15 +74,15 @@ const Footer = () => {
 
         {/* Modal Component */}
         {isModalOpen && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
             <div className="bg-white w-96 rounded-lg shadow-lg p-6">
               <h2 className="text-xl font-semibold mb-4">Aviso Importante</h2>
               <p className="text-gray-600 mb-4">
-                Nosso WhatsApp está fora do ar temporariamente. Entre em contato conosco por aqui.
+                Nosso WhatsApp está fora do ar. Entre em contato conosco por aqui.
               </p>
               <div className="flex justify-end gap-2">
                 <a
-                  href="https://nwdsk.co/c17SA"
+                  href="https://profissionalizaead.com.br/contato"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-green hover:bg-blue-700 text-white font-medium py-2 px-4 rounded"
