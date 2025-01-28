@@ -28,7 +28,7 @@ const Footer = () => {
             <Link href="https://www.youtube.com/@profissionalizaead">
               <img src="/assets/footer/youtube.svg" alt="youtube" className="footer-icons" />
             </Link>
-            <Link href="https://wa.me/5544984233200">
+            <Link href="https://t.me/profissionaliza_bot">
               <img src="/assets/footer/whatsapp.svg" alt="whatsapp" className="footer-icons" />
             </Link>
           </div>

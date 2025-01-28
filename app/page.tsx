@@ -15,7 +15,7 @@ export default function Home() {
       <Tabs />
       <Mentor />
       {/* <Students /> */}
-      <Newsletter />
+      {/* <Newsletter /> */}
       <Footer />
     </main>
   )

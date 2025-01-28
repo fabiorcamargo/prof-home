@@ -4,6 +4,8 @@
 import React from 'react';
 import Head from 'next/head'; // Importando a tag Head do Next.js
 import Card from '../components/Card/Card'; // Importando o componente Card
+import HeaderAlert from '../components/HeaderAlert/HeaderAlert'; // Importando o componente Card
+
 
 const Grupos: React.FC = () => {
   return (
@@ -26,9 +28,10 @@ const Grupos: React.FC = () => {
         <meta name="twitter:image" content="/Logo.png" />
         <meta name="twitter:url" content="https://profissionalizaead.com.br/whatsapp" />
       </Head>
-      <main>
-        <Card />
-      </main>
+      <main className="pt-16">
+  <HeaderAlert />
+  <Card />
+</main>
     </>
   );
 };

@@ -55,11 +55,8 @@ export default function RootLayout({
         {/* Canonical */}
         <link rel="canonical" href="https://profissionalizaead.com.br" />
 
-        {/* Content Security Policy */}
-        <meta
-          httpEquiv="Content-Security-Policy"
-          content="default-src 'self'; script-src 'self' https://mautic.profissionalizaead.com.br;"
-        />
+        
+        
       </Head>
       <body>
         <header>
@@ -69,30 +66,8 @@ export default function RootLayout({
         <footer>
           {/* Rodapé do site */}
         </footer>
-        {/* Scripts para Mautic */}
-        <Script
-          src="//mautic.profissionalizaead.com.br/focus/2.js"
-          strategy="lazyOnload"
-        />
-        <Script
-          id="mautic-tracking"
-          strategy="beforeInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function(w,d,t,u,n,a,m){
-                w['MauticTrackingObject']=n;
-                w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},
-                a=d.createElement(t),
-                m=d.getElementsByTagName(t)[0];
-                a.async=1;
-                a.src=u;
-                m.parentNode.insertBefore(a,m);
-              })(window,document,'script','https://mautic.profissionalizaead.com.br/mtc.js','mt');
-
-              mt('send', 'pageview');
-            `,
-          }}
-        />
+        
+        
       </body>
     </html>
   );
