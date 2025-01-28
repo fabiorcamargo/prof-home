@@ -1,10 +1,11 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
 const Footer = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const modalRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     // Abre o modal automaticamente ao carregar a página
@@ -12,6 +13,12 @@ const Footer = () => {
   }, []);
 
   const closeModal = () => setIsModalOpen(false);
+
+  const handleOutsideClick = (event: React.MouseEvent<HTMLDivElement>) => {
+    if (modalRef.current && !modalRef.current.contains(event.target as Node)) {
+      closeModal();
+    }
+  };
 
   return (
     <div className="mt-10">
@@ -74,8 +81,15 @@ const Footer = () => {
 
         {/* Modal Component */}
         {isModalOpen && (
-          <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
-            <div className="bg-white w-96 rounded-lg shadow-lg p-6">
+          <div
+            className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50"
+            onClick={handleOutsideClick}
+          >
+            <div
+              className="bg-white w-96 rounded-lg shadow-lg p-6"
+              ref={modalRef}
+              onClick={(e) => e.stopPropagation()} // Impede o clique no conteúdo de fechar o modal
+            >
               <h2 className="text-xl font-semibold mb-4">Aviso Importante</h2>
               <p className="text-gray-600 mb-4">
                 Nosso atendimento via Whatsapp está indisponível. Caso precise de ajuda clique em AJUDA ou clique em CONTINUAR.
