@@ -78,7 +78,7 @@ const Footer = () => {
             <div className="bg-white w-96 rounded-lg shadow-lg p-6">
               <h2 className="text-xl font-semibold mb-4">Aviso Importante</h2>
               <p className="text-gray-600 mb-4">
-                Nosso WhatsApp está fora do ar. Entre em contato conosco por aqui.
+                Nosso atendimento via Whatsapp está indisponível. Veja as opções de atendimento ou clique em continuar.
               </p>
               <div className="flex justify-end gap-2">
                 <a
@@ -93,7 +93,7 @@ const Footer = () => {
                   onClick={closeModal}
                   className="bg-lightgrey hover:bg-blue-700 text-white font-medium py-2 px-4 rounded"
                 >
-                  Fechar
+                  Continuar
                 </button>
               </div>
             </div>
