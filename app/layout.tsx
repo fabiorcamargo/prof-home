@@ -56,7 +56,23 @@ export default function RootLayout({
         <link rel="canonical" href="https://profissionalizaead.com.br" />
 
         
-        
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Profissionaliza EAD",
+              "url": "https://profissionalizaead.com.br",
+              "logo": "https://home.profissionalizaead.com.br/Logo.png",
+              "sameAs": [
+                "https://www.facebook.com/ProfissionalizaEAD",
+                "https://www.instagram.com/ProfissionalizaEAD",
+                "https://www.linkedin.com/company/profissionalizaead"
+              ]
+            }),
+          }}
+        />
       </Head>
       <body>
         <header>
