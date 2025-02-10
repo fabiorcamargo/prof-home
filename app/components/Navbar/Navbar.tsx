@@ -1,13 +1,13 @@
 import { Disclosure } from '@headlessui/react';
 import { Bars3Icon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
+import Image from 'next/image';
 import React from 'react';
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
 import Signdialog from "./Signdialog";
 import Registerdialog from "./Registerdialog";
 import Contactus from "./Contactus";
-
 
 interface NavigationItem {
     name: string;
@@ -22,94 +22,87 @@ const navigation: NavigationItem[] = [
     { name: 'Mentores', href: '#mentors-section', current: false },
     { name: 'Avaliações', href: '#testimonial-section', current: false },
     { name: 'Inscrever-se', href: '#join-section', current: false },
-]
+];
 
 function classNames(...classes: string[]) {
-    return classes.filter(Boolean).join(' ')
+    return classes.filter(Boolean).join(' ');
 }
 
 const Navbar = () => {
-
     const [isOpen, setIsOpen] = React.useState(false);
 
     return (
-        <Disclosure as="nav" className="bg-white navbar">
+        <Disclosure as="nav" className="bg-white navbar shadow-md">
             <>
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="relative flex h-16 items-center justify-between">
                         <div className="flex flex-1 items-center sm:items-stretch sm:justify-start">
-
                             {/* LOGO */}
-
                             <div className="flex flex-shrink-0 items-center">
-                                <a href="/">
-                                <img
-                                    className="block h-30px w-30px lg:hidden"
-                                    src={'/assets/logo/Logo.svg'}
-                                    alt="Courses-Logo"
-                                />
-                                </a>
-                                <a href="/">
-                                <img
-                                    className="hidden h-48px w-48px lg:block"
-                                    src={'/assets/logo/Logo.svg'}
-                                    alt="Courses-Logo"
-                                />
-                                </a>
-                                {/* <h2 className='text-white ps-4 text-lg'>Profissionaliza EAD</h2> */}
+                                <Link href="/">
+                                    <Image
+                                        className="block lg:hidden"
+                                        src="/assets/logo/Logo3.svg"
+                                        alt="Courses-Logo"
+                                        width={50}
+                                        height={50}
+                                    />
+                                </Link>
+                                <Link href="/">
+                                    <Image
+                                        className="hidden lg:block"
+                                        src="/assets/logo/Logo.svg"
+                                        alt="Courses-Logo"
+                                        width={120}
+                                        height={80}
+                                    />
+                                </Link>
                             </div>
 
-                            {/* LINKS */}
-
-                            <div className="hidden sm:ml-14 md:block pt-4">
-                                <div className="flex space-x-4">
-                                    {navigation.map((item) => (
-                                        <Link
-                                            key={item.name}
-                                            href={item.href}
-                                            className={classNames(
-                                                item.current ? ' text-purple' : 'hover:text-purple',
-                                                'px-3 py-4 text-15px font-medium space-links'
-                                            )}
-                                            aria-current={item.href ? 'page' : undefined}
-                                        >
-                                            {item.name}
-                                        </Link>
-                                    ))}
-                                    <Contactus />
+                            {/* WHATSAPP LINK */}
+                            <div className="ml-6 flex items-center border border-green px-4 py-2 rounded-lg bg-green100">
+                                <Image
+                                    src="/WhatsApp.svg"
+                                    alt="WhatsApp"
+                                    width={24}
+                                    height={24}
+                                    className="mr-2"
+                                />
+                                <div>
+                                    <p className="text-sm font-semibold text-gray-700">Novo Número Oficial</p>
+                                    <Link 
+                                        href="https://wa.me/message/ZQW6XHYT6UVGI1" 
+                                        target="_blank" 
+                                        rel="noopener noreferrer"
+                                        className="text-green-600 text-lg font-bold hover:underline"
+                                    >
+                                        +55 44 9855-2045
+                                    </Link>
                                 </div>
                             </div>
+
                         </div>
 
                         {/* SIGNIN DIALOG */}
-
-                        <Signdialog />
-
+                        {/* <Signdialog /> */}
 
                         {/* REGISTER DIALOG */}
-
-                        <Registerdialog />
-
+                        {/* <Registerdialog /> */}
 
                         {/* DRAWER FOR MOBILE VIEW */}
-
-                        {/* DRAWER ICON */}
-
-                        <div className='block md:hidden'>
+                        {/* <div className='block md:hidden'>
                             <Bars3Icon className="block h-6 w-6" aria-hidden="true" onClick={() => setIsOpen(true)} />
-                        </div>
+                        </div> */}
 
                         {/* DRAWER LINKS DATA */}
-
-                        <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
+                        {/* <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
                             <Drawerdata />
-                        </Drawer>
-
+                        </Drawer> */}
                     </div>
                 </div>
             </>
         </Disclosure>
-    )
+    );
 }
 
 export default Navbar;

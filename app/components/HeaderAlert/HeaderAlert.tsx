@@ -4,17 +4,17 @@ import React from "react";
 
 const HeaderAlert = () => {
   return (
-    <div className="fixed top-0 left-0 w-full bg-blue text-white text-center py-4 z-50 shadow-lg">
+    <div className="fixed top-0 left-0 w-full bg-green text-white text-center py-4 z-50 shadow-lg">
       <p className="text-lg font-inter">
-        Precisa de ajuda?{" "}
+        Novo Número Oficial{" "}
         <a
-          href="https://nwdsk.co/c17SA"
+          href="https://wa.me/message/ZQW6XHYT6UVGI1"
           target="_blank"
-          className="text-yellow underline"
+          className="text-green underline"
         >
-          Clique aqui
+          +55 44 9855-2045
         </a>{" "}
-        para falar conosco!
+        
       </p>
     </div>
   );

@@ -18,6 +18,7 @@ module.exports = {
       'purple-claro' :  '#a004ff',
       'lightgrey': '#8C8C8C',
       'green': '#6B9F36',
+      'green100': '#dbfce7',
       'green400': '#90c457',
       'lightpink': '#FCF6EF',
       'orange': '#F9CD92',

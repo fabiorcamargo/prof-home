@@ -27,21 +27,41 @@ const Footer = () => {
         <div className="w-full flex flex-col items-center">
           <div className="flex gap-2 justify-center">
             <Link href="https://www.instagram.com/profissionalizaead">
-              <img src="/assets/footer/instagram.svg" alt="instagram" className="footer-icons" />
+              <Image  width={50}
+                      height={50}
+                      src="/assets/footer/instagram.svg"
+                      alt="instagram"
+                      className="footer-icons" />
             </Link>
             <Link href="https://www.facebook.com/profissionalizaead">
-              <img src="/assets/footer/facebook.svg" alt="facebook" className="footer-icons" />
+              <Image  width={50}
+                      height={50}
+                      src="/assets/footer/facebook.svg"
+                      alt="facebook"
+                      className="footer-icons" />
             </Link>
             <Link href="https://www.youtube.com/@profissionalizaead">
-              <img src="/assets/footer/youtube.svg" alt="youtube" className="footer-icons" />
+              <Image  width={50}
+                      height={50}
+                      src="/assets/footer/youtube.svg"
+                      alt="youtube"
+                      className="footer-icons" />
             </Link>
             <Link href="https://t.me/profissionaliza_bot">
-              <img src="/assets/footer/whatsapp.svg" alt="whatsapp" className="footer-icons" />
+              <Image  width={50}
+                      height={50}
+                      src="/assets/footer/whatsapp.svg"
+                      alt="whatsapp"
+                      className="footer-icons" />
             </Link>
           </div>
 
           <div className="w-full flex flex-col items-center pt-8">
-            <img src="/assets/logo/Logo-White.svg" alt="logo" className="mb-4" />
+            <Image width={120}
+                   height={80} 
+                   src="/assets/logo/Logo-White.svg" 
+                   alt="logo" 
+                   className="mb-4" />
             <h3 className="text-white text-lg font-medium">Seu caminho para o Sucesso.</h3>
           </div>
         </div>
@@ -68,7 +88,7 @@ const Footer = () => {
         </div>
 
         <div className="fixed bottom-4 right-4 z-10">
-          <a href="https://nwdsk.co/c17SA" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/message/ZQW6XHYT6UVGI1" target="_blank" rel="noopener noreferrer">
             <Image
               className="w-20 h-20 rounded-full p-2 footer-icons"
               alt="whatsapp"
@@ -80,7 +100,7 @@ const Footer = () => {
         </div>
 
         {/* Modal Component */}
-        {isModalOpen && (
+        {/* {isModalOpen && (
           <div
             className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50"
             onClick={handleOutsideClick}
@@ -96,7 +116,7 @@ const Footer = () => {
               </p>
               <div className="flex justify-end gap-2">
                 <a
-                  href="https://nwdsk.co/c17SA"
+                  href="https://wa.me/message/ZQW6XHYT6UVGI1"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-green hover:bg-blue-700 text-white font-medium py-2 px-4 rounded"
@@ -112,7 +132,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-        )}
+        )} */}
       </div>
     </div>
   );
