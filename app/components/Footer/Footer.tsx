@@ -47,13 +47,13 @@ const Footer = () => {
                       alt="youtube"
                       className="footer-icons" />
             </Link>
-            <Link href="https://t.me/profissionaliza_bot">
+            {/* <Link href="https://t.me/profissionaliza_bot">
               <Image  width={50}
                       height={50}
                       src="/assets/footer/whatsapp.svg"
                       alt="whatsapp"
                       className="footer-icons" />
-            </Link>
+            </Link> */}
           </div>
 
           <div className="w-full flex flex-col items-center pt-8">
