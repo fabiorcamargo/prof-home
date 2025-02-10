@@ -10,7 +10,7 @@ const HeaderAlert = () => {
         <a
           href="https://wa.me/message/ZQW6XHYT6UVGI1"
           target="_blank"
-          className="text-green underline"
+          className="text-white underline"
         >
           +55 44 9855-2045
         </a>{" "}
