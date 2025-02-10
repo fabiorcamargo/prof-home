@@ -60,7 +60,7 @@ const Navbar = () => {
                             </div>
 
                             {/* WHATSAPP LINK */}
-                            <div className="ml-6 flex items-center border border-green px-4 py-2 rounded-lg bg-green100">
+                            <div className="ml-6 flex items-center border border-green px-4 py-2 rounded-lg bg-green100 shadow shadow-sm">
                                 <Image
                                     src="/WhatsApp.svg"
                                     alt="WhatsApp"
