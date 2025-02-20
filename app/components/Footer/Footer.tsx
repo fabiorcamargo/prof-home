@@ -61,7 +61,9 @@ const Footer = () => {
                    height={80} 
                    src="/assets/logo/Logo-White.svg" 
                    alt="logo" 
-                   className="mb-4" />
+                   className="mb-4" 
+                   style={{ width: 'auto', height: 'auto' }}
+                   />
             <h3 className="text-white text-lg font-medium">Seu caminho para o Sucesso.</h3>
           </div>
         </div>
