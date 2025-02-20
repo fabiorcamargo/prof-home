@@ -7,11 +7,11 @@ import { motion } from 'framer-motion';
 const Links: React.FC = () => {
 
   const links = [
-    { url: 'https://instagram.com/profissionalizaead', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png', delay: 0.2 },
-    { url: 'https://facebook.com/profissionalizaead', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/512px-Facebook_f_logo_%282019%29.svg.png', delay: 0.4 },
-    { url: 'https://youtube.com/@profissionalizaead', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/640px-YouTube_full-color_icon_%282017%29.svg.png', delay: 0.6 },
-    { url: 'https://home.profissionalizaead.com.br', image: 'https://storage.profissionalizaead.com.br/storage/logo%201x1.png', delay: 0.8 },
-    { url: 'https://wa.me/5544984233200', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/640px-WhatsApp.svg.png', delay: 1 }
+    { url: 'https://instagram.com/profissionalizaead', image: '/ig.png', delay: 0.2 },
+    { url: 'https://facebook.com/profissionalizaead', image: '/fb.png', delay: 0.4 },
+    { url: 'https://youtube.com/@profissionalizaead', image: '/yt.png', delay: 0.6 },
+    { url: 'https://home.profissionalizaead.com.br', image: '/logo.svg', delay: 0.8 },
+    { url: 'https://wa.me/5544984233200', image: '/wa.png', delay: 1 }
   ];
 
   return (
@@ -21,7 +21,7 @@ const Links: React.FC = () => {
           <Image
             className="rounded-full animate-jump-in"
             alt="profile pic"
-            src="https://storage.profissionalizaead.com.br/storage/logo%201x1.png"
+            src="/logo.svg"
             width={100}
             height={100}
           />
@@ -60,7 +60,7 @@ const Links: React.FC = () => {
               <Image
                 alt="photo"
                 className="w-10 rounded-full"
-                src="https://storage.profissionalizaead.com.br/storage/logo%201x1.png"
+                src="/logo.svg"
                 width={40}
                 height={40}
               />
