@@ -13,7 +13,7 @@ const Mentor = () => {
                             src="/assets/mentor/Sobre.webp"
                             alt="sobre"
                             width={400}
-                            height={400}
+                            height={350}
                             className="h-full w-full object-cover object-center"
                         />
                     </div>

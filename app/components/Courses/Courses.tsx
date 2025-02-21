@@ -208,8 +208,8 @@ const NamesList = () => {
                         src={name.imageSrc}
                         alt={name.imageSrc}
                         className="h-full w-full object-cover object-center"
-                        width={100}
-                        height={50}
+                        width={300}
+                        height={200}
                         priority
                     />
                 </div>
