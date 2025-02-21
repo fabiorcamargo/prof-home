@@ -24,6 +24,7 @@ const Links: React.FC = () => {
             src="/logo.svg"
             width={100}
             height={100}
+            priority
           />
           <p className="pt-2 text-lg font-medium animate-jump-in">@profissionalizaead</p>
           <p className="text-sm font-extrabold text-gray-900 animate-jump-in">Cursos para o seu Futuro</p>
@@ -63,6 +64,7 @@ const Links: React.FC = () => {
                 src="/logo.svg"
                 width={40}
                 height={40}
+                priority
               />
               <div className="ml-2">
                 <div className="text-xs font-semibold">Acesse a plataforma</div>

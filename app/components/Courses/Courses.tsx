@@ -2,6 +2,7 @@
 import * as React from "react";
 import { useState } from "react";
 import { GlobeAltIcon, DevicePhoneMobileIcon, CircleStackIcon, CloudIcon } from '@heroicons/react/24/outline';
+import Image from "next/image";
 
 
 interface Name {
@@ -203,10 +204,13 @@ const NamesList = () => {
         <div key={index}>
             <div className=" text-lg sm:text-sm py-5 lg:py-0">
                 <div className="aspect-w-1 aspect-h-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
-                    <img
+                    <Image
                         src={name.imageSrc}
                         alt={name.imageSrc}
                         className="h-full w-full object-cover object-center"
+                        width={100}
+                        height={50}
+                        priority
                     />
                 </div>
                 <div className='flex justify-between'>
@@ -225,11 +229,22 @@ const NamesList = () => {
                     <p>{name.turma} Classes</p>
                     <div className='flex flex-row space-x-4'>
                         <div className='flex'>
-                            <img src={'/assets/courses/account.svg'} alt="circle" />
+                            <Image
+                                src={'/assets/courses/account.svg'}
+                                alt="circle"
+                                width={200}
+                                height={100}
+                                style={{ width: 'auto', height: 'auto' }}
+                                priority
+                            />
                             <p className='text-lightgrey ml-1'>{name.students}</p>
                         </div>
                         <div className='flex'>
-                            <img src={'/assets/courses/Star.svg'} alt="star" />
+                            <Image src={'/assets/courses/Star.svg'} alt="star"
+                                width={200}
+                                height={100}
+                                style={{ width: 'auto', height: 'auto' }}
+                                priority />
                             <p className='ml-1'>4.8</p>
                         </div>
                     </div>

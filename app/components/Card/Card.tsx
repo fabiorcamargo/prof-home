@@ -106,7 +106,7 @@ const App = () => {
                                                     width={800}
                                                     height={500}
                                                     style={{ width: 'auto', height: 'auto' }}
-                                                    priority
+                                                    priority={true}
                                                 />
                                                 <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                                                     <QRCode value={name.link} size={128} />

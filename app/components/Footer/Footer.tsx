@@ -97,6 +97,7 @@ const Footer = () => {
               src="WhatsApp.svg"
               width={100}
               height={100}
+              priority={true}
             />
           </a>
         </div>

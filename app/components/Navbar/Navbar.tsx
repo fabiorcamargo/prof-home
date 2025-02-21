@@ -51,10 +51,12 @@ const Navbar = () => {
                                 <Link href="/">
                                     <Image
                                         className="hidden lg:block"
-                                        src="/assets/logo/Logo.svg"
-                                        alt="Courses-Logo"
-                                        width={120}
-                                        height={80}
+                                        alt="Profissionaliza EAD"
+                                        src="/logo.svg"
+                                        width={50}
+                                        height={50}
+                                        
+                                        priority
                                     />
                                 </Link>
                             </div>
