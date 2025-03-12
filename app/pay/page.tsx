@@ -80,14 +80,14 @@ const Links: React.FC = () => {
               <h2 className="text-lg font-bold text-center">Informações de Pagamento</h2>
               {paymentInfo ? (
                 <>
-                  <p className="text-sm font-medium">Cliente: {payCustomer?.name}</p>
+                  <p className="text-sm font-medium">Cliente: <b> {payCustomer?.name} </b></p>
                   <p className="text-sm font-medium">
-                    Mês de Referência: {paymentInfo.dueDate ? format(parseISO(paymentInfo.dueDate), "MMMM", { locale: ptBR }).charAt(0).toUpperCase() + format(parseISO(paymentInfo.dueDate), "MMMM", { locale: ptBR }).slice(1) : "Carregando..."}
+                    Mês de Referência: <b> {paymentInfo.dueDate ? format(parseISO(paymentInfo.dueDate), "MMMM", { locale: ptBR }).charAt(0).toUpperCase() + format(parseISO(paymentInfo.dueDate), "MMMM", { locale: ptBR }).slice(1) : "Carregando..."} </b>
                   </p>
                   <p className="text-sm font-medium">
-                    Vencimento: {paymentInfo.dueDate ? format(parseISO(paymentInfo.dueDate), "dd/MM/yy") : "Carregando..."}
+                    Vencimento: <b>{paymentInfo.dueDate ? format(parseISO(paymentInfo.dueDate), "dd/MM/yy") : "Carregando..."}</b>
                   </p>
-                  <p className="text-sm font-medium">Valor: R$ {paymentInfo.value}</p>
+                  <p className="text-sm font-medium">Valor: <b> R$ {paymentInfo.value}</b></p>
                 </>
               ) : (
                 <p className="text-sm font-medium text-red-600">Carregando informações de pagamento...</p>
