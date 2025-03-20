@@ -1,6 +1,9 @@
 User-agent: *
-Disallow: /
-Allow: /$
-Allow: /sitemap.xml
+Allow: /
+Allow: /favicon.ico
+Allow: /favicon-32x32.png
+Allow: /favicon-192x192.png
+Allow: /apple-touch-icon.png
+Disallow: /admin/  # Bloqueie apenas áreas privadas (se necessário)
 
 Sitemap: https://home.profissionalizaead.com.br/sitemap.xml
