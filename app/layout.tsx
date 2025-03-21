@@ -83,7 +83,28 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               },
             }),
           }}
-          id="structured-data-rating" // Adicionando o id aqui
+          id="structured-data-rating"
+        />
+
+        {/* Dados Estruturados de Pergunta e Resposta */}
+        <Script
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": {
+                "@type": "Question",
+                "name": "Como funciona a Profissionaliza EAD?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No mundo de hoje, o ensino a distância se tornou uma das formas mais acessíveis e práticas de se qualificar e crescer profissionalmente. Ver o vídeo no nosso blog: [Leia mais no Blog](https://shop.profissionalizaead.com.br/r/UW7).",
+                },
+              },
+            }),
+          }}
+          id="structured-data-faq"
         />
       </head>
       <body>
